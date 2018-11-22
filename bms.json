@@ -1,56 +1,8 @@
 [
     {
-        "name": "Atrial Fibrillation",
-        "details": {
-            "information": "AF is a heart condition that makes your heart beat out of rhythm and this can sometimes be fast. AF can also be described as persistent, when episodes last seven days or more, paroxysmal which spontaneously terminates within 7 days, usually within 48 hours, or permanent, when the heart rhythm disturbance is continuous. The heart is made up of four chambers - the left and right atria (two upper chambers), and the left and right ventricles (two lower chambers). AF occurs when chaotic electrical activity develops in the atria, disturbing your hearts natural rhythm. As a result, the atria dont contract properly, which means your heart cannot pump blood as efficiently as usual.",
-            "images": ["https://jsonserver.github.io/af1.png", "https://jsonserver.github.io/af2.png"],
-            "causes": [
-                "High blood pressure",
-                "Thickening/blockage of the blood vessels that supply the heart",
-                "Heart attack",
-                "Heart disease from birth",
-                "After heart surgery"
-            ],
-            "symptoms": [
-                "Fast heartbeat may be felt (some people describe these as palpitations)",
-                "Tiredness",
-                "Shortness of breath",
-                "Chest pain (angina)",
-                "Dizziness"
-            ],
-            "complications": [
-                "The main risk associated with AF is stroke. As the blood is not being properly pumped away from the heart, it may collect or pool and a clot could develop in the heart. If the clot leaves the heart and enters the small blood vessels of the brain, the flow of blood may block and result in a stroke.",
-                "People with AF are more likely to have a stroke compared with people who do not have AF.",
-                "If your atrial fibrillation is not well controlled, it may start to weaken your heart. In extreme cases, it can lead to heart failure where your heart cannot pump blood around your body efficiently."
-            ],
-            "treatment": "Medicines and surgical procedures are available"
-        }
+        "name": "Atrial Fibrillation"
     },
     {
-        "name": "Venous Thromboembolism (VTE)",
-        "details": {
-            "information": "Blood clots occur when blood cells pool and stick together. Your body naturally forms blood clots to stop bleeding at sites of injury. However, sometimes blood clots can form inside veins. Venous thromboembolism (or VTE for short) is a term which covers two related conditions; Deep vein thrombosis (or DVT) and Pulmonary embolism (or PE). When a blood clot blocks a vessel, most frequently within the deep veins of the legs, it is termed DVT. Part of the blood clot from a DVT may also break off and travel to the lungs resulting in a PE. VTE is fairly common. Approximately 1 in 20 people will have a VTE in their lifetime.",
-            "images": ["https://jsonserver.github.io/vte1.png", "https://jsonserver.github.io/vte2.png"],
-            "causes": [
-                "Anyone can develop a VTE, but some things increase the risk of it occurring. For example, injury from trauma or surgery triggers the bodys natural clotting process, as do high levels of the hormone oestrogen and smoking. The more of these risk factors you have the greater the chance of having a VTE.",
-                "Deep vein thrombosis (or DVT) occurs when a blood clot (thrombus) forms in a deep vein in the body. DVTs generally occur in the lower leg, thigh or pelvic area. The clot stops or restricts the normal flow of blood in the vein, leading to blood building up below the clot.",
-                "A pulmonary embolism (or PE) occurs when a blood vessel in the lungs gets blocked by a blood clot or part of a clot (embolus) that has broken loose from a DVT and travelled through the bloodstream and into the lungs. If it is large, the clot may restrict blood flow to the lungs and cause breathing difficulties. If a DVT is untreated this increases the risk of developing a PE. PE is more serious than DVT and can be fatal if not immediately diagnosed and treated."
-
-            ],
-            "symptoms": [
-                "Pain",
-                "Tenderness",
-                "Swelling",
-                "Change in skin colour (blue/red purple) or warmth on the affected limb"
-            ],
-            "complications": [
-                "Post-thrombotic syndrome (PTS) is a complication that may occur after someone has suffered from a DVT. Veins have valves that control the direction of blood flow and PTS occurs when these valves are damaged by the clot.",
-                "PTS is more likely to occur if the blood clot is above the knee, if you have more than one clot in the same leg more than once or if you are overweight.",
-                "About a third to half of DVT patients will develop PTS, in most cases within 1 to 2 years of the acute DVT.",
-                "PTS can cause swelling, pain, discolouration and leg ulcers.",
-                "You can reduce the risk of PTS by wearing elastic compression stockings, which create gentle pressure and improve your circulation by helping to move blood up your leg(s). Compression stockings may also be recommended or prescribed to relieve pain and swelling caused by DVT"
-            ],
-            "treatment": "If you are diagnosed with a VTE, or are at risk from recurrent VTE, you may be prescribed an anticoagulant. Anticoagulants are drugs that work by increasing the time it takes your blood to clot. They are used to treat and prevent recurrence of VTE by stopping the clot from getting bigger and helping the body remove it naturally. They also help stop new clots from forming. The main risk of taking any anticoagulant is bleeding – by increasing the time it takes your blood to clot you are more at risk of having a bleed. Your healthcare team would be able to provide you with more information about diagnosis, care and treatment options. Always take your medicines as directed by your doctor. If you have any questions about your condition or your medicines, you should speak to your doctor, nurse or pharmacist."
-        }
+        "name": "Venous Thromboembolism (VTE)"
     }
 ]
