@@ -23,21 +23,21 @@
     {
         "id": 4, 
         "date": "12 Aug, 2019", 
-        "description": "Expense Reimbursement", 
+        "description": "Lunch", 
         "type": "Debit", 
         "amount": 250.00
     },
     {
         "id": 5, 
         "date": "09 Aug, 2019", 
-        "description": "Expense Reimbursement", 
+        "description": "Funds tranferred", 
         "type": "Debit", 
         "amount": 2000.00
     },
     {
         "id": 6, 
         "date": "04 Aug, 2019", 
-        "description": "Expense Reimbursement", 
+        "description": "Rent Aug'19", 
         "type": "Debit", 
         "amount": 200.00
     },
