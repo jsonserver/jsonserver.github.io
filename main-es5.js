@@ -12,6 +12,15 @@ var map = {
 		"./src/app/app-complete/app-complete.module.ts",
 		"app-complete-app-complete-module"
 	],
+	"./bottom-sheet/bottom-sheet.module": [
+		"./src/app/bottom-sheet/bottom-sheet.module.ts",
+		"common",
+		"bottom-sheet-bottom-sheet-module"
+	],
+	"./card-management-debit/card-management-debit.module": [
+		"./src/app/card-management-debit/card-management-debit.module.ts",
+		"card-management-debit-card-management-debit-module"
+	],
 	"./chat-page/chat-page.module": [
 		"./src/app/chat-page/chat-page.module.ts",
 		"chat-page-chat-page-module"
@@ -33,14 +42,52 @@ var map = {
 		"common",
 		"country-of-citizenship-country-of-citizenship-module"
 	],
+	"./dashboard/dashboard.module": [
+		"./src/app/dashboard/dashboard.module.ts",
+		"common",
+		"dashboard-dashboard-module"
+	],
 	"./get-started/get-started.module": [
 		"./src/app/get-started/get-started.module.ts",
 		"get-started-get-started-module"
+	],
+	"./history-velo-cd/history-velo-cd.module": [
+		"./src/app/history-velo-cd/history-velo-cd.module.ts",
+		"history-velo-cd-history-velo-cd-module"
 	],
 	"./list-of-country/list-of-country.module": [
 		"./src/app/list-of-country/list-of-country.module.ts",
 		"common",
 		"list-of-country-list-of-country-module"
+	],
+	"./login-password/login-password.module": [
+		"./src/app/login-password/login-password.module.ts",
+		"login-password-login-password-module"
+	],
+	"./login-username/login-username.module": [
+		"./src/app/login-username/login-username.module.ts",
+		"login-username-login-username-module"
+	],
+	"./login-verify/login-verify.module": [
+		"./src/app/login-verify/login-verify.module.ts",
+		"login-verify-login-verify-module"
+	],
+	"./manage-accounts/manage-account-details/manage-account-details.module": [
+		"./src/app/manage-accounts/manage-account-details/manage-account-details.module.ts",
+		"manage-accounts-manage-account-details-manage-account-details-module"
+	],
+	"./manage-accounts/manage-accounts.module": [
+		"./src/app/manage-accounts/manage-accounts.module.ts",
+		"common",
+		"manage-accounts-manage-accounts-module"
+	],
+	"./my-profile/my-profile.module": [
+		"./src/app/my-profile/my-profile.module.ts",
+		"my-profile-my-profile-module"
+	],
+	"./mysettings/mysettings.module": [
+		"./src/app/mysettings/mysettings.module.ts",
+		"mysettings-mysettings-module"
 	],
 	"./premier-checking/premier-checking.module": [
 		"./src/app/premier-checking/premier-checking.module.ts",
@@ -53,6 +100,24 @@ var map = {
 	"./social-security-number/social-security-number.module": [
 		"./src/app/social-security-number/social-security-number.module.ts",
 		"social-security-number-social-security-number-module"
+	],
+	"./transaction-history-cd/transaction-history-cd.module": [
+		"./src/app/transaction-history-cd/transaction-history-cd.module.ts",
+		"transaction-history-cd-transaction-history-cd-module"
+	],
+	"./transaction-history-checking/transaction-history-checking.module": [
+		"./src/app/transaction-history-checking/transaction-history-checking.module.ts",
+		"transaction-history-checking-transaction-history-checking-module"
+	],
+	"./transfer-modal-sheet/transfer-modal-sheet.module": [
+		"./src/app/transfer-modal-sheet/transfer-modal-sheet.module.ts",
+		"common",
+		"transfer-modal-sheet-transfer-modal-sheet-module"
+	],
+	"./transfer/transfer.module": [
+		"./src/app/transfer/transfer.module.ts",
+		"common",
+		"transfer-transfer-module"
 	],
 	"./velo-products/velo-products.module": [
 		"./src/app/velo-products/velo-products.module.ts",
@@ -509,7 +574,7 @@ module.exports = webpackAsyncContext;
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-app>\n  <ion-router-outlet></ion-router-outlet>\n</ion-app>\n"
+module.exports = "<ion-app>\n  <ion-split-pane>\n    <ion-menu id=\"myMenu\"  swipeEnabled=\"true\" type=\"overlay\" contentId=\"content\" side=\"end\">\n      <ion-header>\n         \n      </ion-header>\n\n   \n      <ion-content>\n          <ion-col class=\"ion-margin-top\"></ion-col>\n          <ion-text color=\"dark\"  >\n                <h2 class=\"ion-text-center\" >  \n                    My Velo   \n                 </h2>\n          </ion-text>\n          <ion-text color=\"dark\" >\n                   <p class=\"ion-text-center\">  \n                      Account No. 178348965   \n                    </p>\n          </ion-text>\n          <ion-text color=\"dark\">\n                     <p class=\"ion-text-center\">  \n                        Routing No. 322078381\n                      </p>\n          </ion-text>\n          <ion-text color=\"primary\">\n              <p class=\"ion-text-center\">  \n                 How to fund my Velo account >\n               </p>\n          </ion-text>\n\n\n          \n          <ion-grid>\n              <ion-row class=\"ion-margin\">\n                <ion-col col-6 no-padding>\n                    <ion-button color=\"primary\" no-margin expand=\"full\" size=\"small\" color=\"primary\" (click)=\"onClick()\">\n                        English\n                      </ion-button>\n                </ion-col>\n                <ion-col col-6 no-padding>\n                    <ion-button no-margin color=\"light\" outline expand=\"full\" size=\"small\" color=\"light\" (click)=\"onClick()\" cl>\n                        中文\n                      </ion-button>\n                </ion-col>\n              </ion-row>\n              </ion-grid>\n        \n        <ion-list>\n          <ion-menu-toggle  auto-hide=\"false\" *ngFor=\"let p of appPages\">\n            <ion-item [routerDirection]=\"'root'\" [routerLink]=\"[p.url]\">\n      \n              <ion-img class=\"app-ion-img\" slot=\"start\" src={{p.icon}} ></ion-img>\n              <ion-text color=\"primary\">\n                {{p.title}}\n              </ion-text>\n            </ion-item>\n          </ion-menu-toggle>\n        </ion-list>\n      </ion-content>\n    </ion-menu>\n    <ion-router-outlet id=\"content\" main></ion-router-outlet>\n  </ion-split-pane>\n</ion-app>\n"
 
 /***/ }),
 
@@ -530,7 +595,33 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var routes = [
-    { path: '', redirectTo: 'get-started', pathMatch: 'full' },
+    {
+        path: '',
+        redirectTo: 'get-started',
+        pathMatch: 'full'
+    },
+    {
+        path: 'list',
+        loadChildren: function () { return __webpack_require__.e(/*! import() | list-list-module */ "list-list-module").then(__webpack_require__.bind(null, /*! ./list/list.module */ "./src/app/list/list.module.ts")).then(function (m) { return m.ListPageModule; }); }
+    },
+    { path: 'login-username', loadChildren: './login-username/login-username.module#LoginUsernamePageModule' },
+    { path: 'login-password', loadChildren: './login-password/login-password.module#LoginPasswordPageModule' },
+    { path: 'login-verify', loadChildren: './login-verify/login-verify.module#LoginVerifyPageModule' },
+    { path: 'card-management-debit', loadChildren: './card-management-debit/card-management-debit.module#CardManagementDebitPageModule' },
+    { path: 'mysettings', loadChildren: './mysettings/mysettings.module#MysettingsPageModule' },
+    { path: 'my-profile', loadChildren: './my-profile/my-profile.module#MyProfilePageModule' },
+    { path: 'transaction-history-checking', loadChildren: './transaction-history-checking/transaction-history-checking.module#TransactionHistoryCheckingPageModule' },
+    { path: 'history-velo-cd', loadChildren: './history-velo-cd/history-velo-cd.module#HistoryVeloCdPageModule' },
+    { path: 'transaction-history-cd', loadChildren: './transaction-history-cd/transaction-history-cd.module#TransactionHistoryCDPageModule' },
+    { path: 'bottom-sheet', loadChildren: './bottom-sheet/bottom-sheet.module#BottomSheetPageModule' },
+    //{ path: 'dummy-dashboard', loadChildren: './dummy-dashboard/dummy-dashboard.module#DummyDashboardPageModule' },
+    { path: 'transfer', loadChildren: './transfer/transfer.module#TransferPageModule' },
+    { path: 'transfer-modal-sheet', loadChildren: './transfer-modal-sheet/transfer-modal-sheet.module#TransferModalSheetPageModule' },
+    { path: 'manage-accounts', loadChildren: './manage-accounts/manage-accounts.module#ManageAccountsPageModule' },
+    { path: 'manage-account-details', loadChildren: './manage-accounts/manage-account-details/manage-account-details.module#ManageAccountDetailsPageModule' },
+    { path: 'dashboard', loadChildren: './dashboard/dashboard.module#DashboardPageModule' },
+    { path: 'dashboard/transfers', loadChildren: './transfer/transfer.module#TransferPageModule' },
+    //{ path: 'dashboard/mybrillio', loadChildren: './' },
     { path: 'get-started', loadChildren: './get-started/get-started.module#GetStartedPageModule' },
     { path: 'velo-products', loadChildren: './velo-products/velo-products.module#VeloProductsPageModule' },
     { path: 'residency-status', loadChildren: './residency-status/residency-status.module#ResidencyStatusPageModule' },
@@ -569,7 +660,7 @@ var AppRoutingModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuc2NzcyJ9 */"
+module.exports = ".app-ion-img {\n  width: 30px;\n  height: 30px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9wcmFzaGFudHBhdGlsL21CYW5rL3NyYy9hcHAvYXBwLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9hcHAuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxXQUFBO0VBQ0EsWUFBQTtBQ0NKIiwiZmlsZSI6InNyYy9hcHAvYXBwLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmFwcC1pb24taW1ne1xuICAgIHdpZHRoOiAzMHB4O1xuICAgIGhlaWdodDogMzBweDtcbn0iLCIuYXBwLWlvbi1pbWcge1xuICB3aWR0aDogMzBweDtcbiAgaGVpZ2h0OiAzMHB4O1xufSJdfQ== */"
 
 /***/ }),
 
@@ -593,11 +684,38 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 var AppComponent = /** @class */ (function () {
-    function AppComponent(platform, splashScreen, statusBar) {
+    function AppComponent(platform, splashScreen, statusBar, navCtrl) {
         this.platform = platform;
         this.splashScreen = splashScreen;
         this.statusBar = statusBar;
+        this.navCtrl = navCtrl;
+        this.appPages = [
+            {
+                title: 'Explore Products',
+                icon: 'assets/explore_products.svg'
+            },
+            {
+                title: 'Transaction History',
+                url: '/transfer',
+                icon: 'assets/group_7.svg'
+            },
+            {
+                title: 'Debit Card',
+                url: '/card-management-debit',
+                icon: 'assets/card_security.svg'
+            },
+            {
+                title: 'My Settings',
+                url: '/mysettings',
+                icon: 'assets/group_6.svg'
+            },
+            {
+                title: 'Privacy & Disclosures',
+                icon: 'assets/privacy.svg'
+            }
+        ];
         this.initializeApp();
     }
     AppComponent.prototype.initializeApp = function () {
@@ -607,10 +725,14 @@ var AppComponent = /** @class */ (function () {
             _this.splashScreen.hide();
         });
     };
+    AppComponent.prototype.goToCardManagement = function () {
+        this.navCtrl.navigateForward("card-management-debit");
+    };
     AppComponent.ctorParameters = function () { return [
         { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["Platform"] },
         { type: _ionic_native_splash_screen_ngx__WEBPACK_IMPORTED_MODULE_3__["SplashScreen"] },
-        { type: _ionic_native_status_bar_ngx__WEBPACK_IMPORTED_MODULE_4__["StatusBar"] }
+        { type: _ionic_native_status_bar_ngx__WEBPACK_IMPORTED_MODULE_4__["StatusBar"] },
+        { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["NavController"] }
     ]; };
     AppComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -620,7 +742,8 @@ var AppComponent = /** @class */ (function () {
         }),
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_angular__WEBPACK_IMPORTED_MODULE_2__["Platform"],
             _ionic_native_splash_screen_ngx__WEBPACK_IMPORTED_MODULE_3__["SplashScreen"],
-            _ionic_native_status_bar_ngx__WEBPACK_IMPORTED_MODULE_4__["StatusBar"]])
+            _ionic_native_status_bar_ngx__WEBPACK_IMPORTED_MODULE_4__["StatusBar"],
+            _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["NavController"]])
     ], AppComponent);
     return AppComponent;
 }());
@@ -664,7 +787,11 @@ var AppModule = /** @class */ (function () {
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
             declarations: [_app_component__WEBPACK_IMPORTED_MODULE_7__["AppComponent"]],
             entryComponents: [],
-            imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["BrowserModule"], _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["IonicModule"].forRoot(), _app_routing_module__WEBPACK_IMPORTED_MODULE_8__["AppRoutingModule"]],
+            imports: [
+                _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["BrowserModule"],
+                _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["IonicModule"].forRoot(),
+                _app_routing_module__WEBPACK_IMPORTED_MODULE_8__["AppRoutingModule"]
+            ],
             providers: [
                 _ionic_native_status_bar_ngx__WEBPACK_IMPORTED_MODULE_6__["StatusBar"],
                 _ionic_native_splash_screen_ngx__WEBPACK_IMPORTED_MODULE_5__["SplashScreen"],
@@ -741,7 +868,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/prashantpatil/onboard/onBoardingApplication/src/main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! /Users/prashantpatil/mBank/src/main.ts */"./src/main.ts");
 
 
 /***/ })

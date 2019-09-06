@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="117" height="84" viewBox="0 0 117 84">
+    <defs>
+        <path id="a" d="M0 0h375v771H0z"/>
+        <linearGradient id="b" x1="58.766%" x2="48.242%" y1="100%" y2="0%">
+            <stop offset="0%" stop-color="#006F93"/>
+            <stop offset="66.674%" stop-color="#006E93"/>
+            <stop offset="73.934%" stop-color="#00688F"/>
+            <stop offset="83.733%" stop-color="#005A87"/>
+            <stop offset="100%" stop-color="#001E65"/>
+        </linearGradient>
+        <path id="e" d="M0 0h351v455H0z"/>
+        <filter id="d" width="103.1%" height="102.4%" x="-1.6%" y="-.8%" filterUnits="objectBoundingBox">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1.5"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g transform="translate(-144 -129)">
+            <mask id="c" fill="#fff">
+                <use xlink:href="#a"/>
+            </mask>
+            <use fill="#D8D8D8" xlink:href="#a"/>
+            <path fill="url(#b)" d="M0 0h375v2000H0z" mask="url(#c)"/>
+        </g>
+        <path fill="#000" d="M-144 594h375v48h-375z"/>
+        <g transform="translate(96.625 594)">
+            <path d="M0 0h104.167v48H0z"/>
+            <rect width="14" height="14" x="45.083" y="17" stroke="#FFF" stroke-width="2" rx="2"/>
+        </g>
+        <g transform="translate(-8.583 594)">
+            <path d="M0 0h104.167v48H0z"/>
+            <circle cx="52.083" cy="24" r="7" stroke="#FFF" stroke-width="2"/>
+        </g>
+        <path d="M-113.792 594H-9.625v48h-104.167z"/>
+        <path stroke="#FFF" stroke-width="2" d="M-55.416 609.247c.955-.551 1.728-.106 1.728 1v14.509c0 1.103-.771 1.551-1.728.999l-12.549-7.255c-.954-.552-.956-1.445 0-1.998l12.55-7.255z"/>
+        <path fill="#D8D8D8" stroke="#979797" d="M-143.5 641.5h374v1h-374z" opacity=".352"/>
+        <g>
+            <g transform="translate(-132 -39)">
+                <use fill="#000" filter="url(#d)" xlink:href="#e"/>
+                <use fill="#FFF" xlink:href="#e"/>
+            </g>
+            <g transform="translate(1 1)">
+                <circle cx="41" cy="41" r="41" stroke="#00658D" stroke-width="2"/>
+                <path stroke="#00C9C9" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M27.49 25.885L43.5 44.5"/>
+                <path stroke="#00658D" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M41 5.5v6.365M15.06 16.06l4.502 4.502M19.121 62.06l-4.5 4.502M41 70.5v6.365M11.5 41H4.121"/>
+                <path stroke="#00C9C9" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M39 44.5l25.815-22.714"/>
+                <g transform="rotate(-17 168.783 -166.312)">
+                    <path fill="#00C9C9" d="M0 0h55v25H0z"/>
+                    <path stroke="#FFF" stroke-width=".96" d="M4.273 5.239v13.56a2.398 2.398 0 0 1 1.897 2.355c0 .163-.017.324-.048.481h42.756a2.439 2.439 0 0 1-.048-.481c0-1.16.814-2.13 1.897-2.354V6.2a2.398 2.398 0 0 1-1.897-2.354c0-.163.017-.324.048-.481H6.122a2.393 2.393 0 0 1-1.849 1.874z"/>
+                    <ellipse cx="9.483" cy="11.538" fill="#FFF" rx="1.897" ry="1.923"/>
+                    <ellipse cx="46.466" cy="11.538" fill="#FFF" rx="1.897" ry="1.923"/>
+                    <ellipse cx="28.448" cy="12.5" fill="#FFF" rx="5.69" ry="5.769"/>
+                </g>
+                <g transform="translate(54 53)">
+                    <path fill="#00C9C9" d="M0 0h55v25H0z"/>
+                    <path stroke="#FFF" stroke-width=".96" d="M4.273 5.239v13.56a2.398 2.398 0 0 1 1.897 2.355c0 .163-.017.324-.048.481h42.756a2.439 2.439 0 0 1-.048-.481c0-1.16.814-2.13 1.897-2.354V6.2a2.398 2.398 0 0 1-1.897-2.354c0-.163.017-.324.048-.481H6.122a2.393 2.393 0 0 1-1.849 1.874z"/>
+                    <ellipse cx="9.483" cy="11.538" fill="#FFF" rx="1.897" ry="1.923"/>
+                    <ellipse cx="46.466" cy="11.538" fill="#FFF" rx="1.897" ry="1.923"/>
+                    <ellipse cx="28.448" cy="12.5" fill="#FFF" rx="5.69" ry="5.769"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

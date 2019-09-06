@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <circle stroke="null" id="svg_2" r="30.968136" fill="#007856" cy="31.878603" cx="32"/>
+  <path id="svg_4" fill="#ffffff" d="m32,52c-1.105,0 -2,-0.895 -2,-2l0,-32c0,-1.105 0.895,-2 2,-2l0,0c1.105,0 2,0.895 2,2l0,32c0,1.105 -0.895,2 -2,2l0,0z"/>
+  <path id="svg_6" fill="#ffffff" d="m46,52c-1.105,0 -2,-0.895 -2,-2l0,-32c0,-1.105 0.895,-2 2,-2l0,0c1.105,0 2,0.895 2,2l0,32c0,1.105 -0.895,2 -2,2l0,0z"/>
+  <path id="svg_8" fill="#ffffff" d="m18,52c-1.105,0 -2,-0.895 -2,-2l0,-32c0,-1.105 0.895,-2 2,-2l0,0c1.105,0 2,0.895 2,2l0,32c0,1.105 -0.895,2 -2,2l0,0z"/>
+  <circle opacity="0.2" id="svg_10" r="4" fill="#231F20" cy="38" cx="45.865"/>
+  <circle opacity="0.2" id="svg_12" r="4" fill="#231F20" cy="27" cx="32"/>
+  <circle opacity="0.2" id="svg_14" r="4" fill="#231F20" cy="44" cx="18"/>
+  <circle id="svg_16" r="4" fill="#FFFFFF" cy="36" cx="45.865"/>
+  <circle id="svg_18" r="4" fill="#FFFFFF" cy="25" cx="32"/>
+  <circle id="svg_20" r="4" fill="#FFFFFF" cy="42" cx="18"/>
+ </g>
+</svg>
