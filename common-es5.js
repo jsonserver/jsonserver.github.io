@@ -484,7 +484,18 @@ var openURL = function (url, ev, direction) { return tslib__WEBPACK_IMPORTED_MOD
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n\n<ion-content>\n    <ion-item lines='none'>\n        <ion-icon color=\"dark\" name=\"ios-arrow-down\" (click)=\"dismiss()\"></ion-icon>\n        <ion-label class=\"ion-margin\">\n        <h2 class=\"hv-text-size-12 hv-text-align-center\">Concierge</h2>\n        </ion-label>\n    </ion-item>\n\n    <ion-list class=\"hv-margin-left hv-margin-right\">\n        <ion-item >\n            <ion-text color=\"dark\" >\n                <p class=\"ion-text-center hv-text-size-16\">Hi Iam Gomez, how can we help you today?</p>\n            </ion-text>\n        </ion-item>\n\n    <ion-menu-toggle auto-hide=\"false\" *ngFor=\"let dt of dataList\">\n    <ion-item >\n      <ion-avatar class=\"hv-item-margin\">\n         <img src={{dt.url}}>\n      </ion-avatar>\n      <ion-label class=\"ion-margin\">\n      <h2 class=\"hv-text-size-12 hv-padding-left-20\" style=\"color:blue;\">{{dt.title}}</h2>\n      </ion-label>\n    </ion-item></ion-menu-toggle>\n\n    </ion-list>\n\n  <ion-item lines ='none'>\n    <ion-label class=\"ion-margin\">\n      <h2 class=\"hv-text-size-12 hv-padding-left-20 hv-text-align-center\" style=\"color:blue;\">Hourse of Operations ></h2>\n    </ion-label>\n  </ion-item>\n\n     \n      \n</ion-content>\n"
+module.exports = "<ion-content >\r\n    <ion-item lines='none' class=\"hv-text-align-center\">\r\n        <ion-icon color=\"dark\" name=\"ios-arrow-down\" (click)=\"dismiss()\"></ion-icon>\r\n        <ion-label>\r\n        <h2 class=\"hv-text-size-20\">Concierge</h2>\r\n        </ion-label>\r\n        <ion-icon color=\"dark\" ></ion-icon>\r\n    </ion-item>\r\n\r\n    <ion-list class=\"hv-margin-left hv-margin-right\">\r\n        <ion-item >\r\n            <ion-text color=\"dark\" >\r\n                <p class=\"ion-text-center hv-text-size-16\">Hi Iam Gomez, how can we help you today?</p>\r\n            </ion-text>\r\n        </ion-item>\r\n\r\n    <ion-item auto-hide=\"false\" *ngFor=\"let dt of dataList\">\r\n      <ion-avatar class=\"hv-item-margin item-padding\" >\r\n         <img src={{dt.url}}>\r\n      </ion-avatar>\r\n      <ion-label class=\"ion-margin\">\r\n      <h2 class=\"hv-text-size-16 hv-padding-left-20\" style=\"color:dark;\">{{dt.title}}</h2>\r\n      </ion-label>\r\n    </ion-item>\r\n    </ion-list>\r\n\r\n  <ion-item lines ='none'>\r\n    <ion-label class=\"ion-margin\">\r\n      <h2 class=\"hv-text-size-16 hv-padding-left-20 hv-text-align-center\" style=\"color:green;\">Hours of Operations ></h2>\r\n    </ion-label>\r\n  </ion-item>\r\n\r\n     \r\n      \r\n</ion-content>\r\n"
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/index.js!./src/app/list-of-country/list-of-country.page.html":
+/*!*************************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/list-of-country/list-of-country.page.html ***!
+  \*************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\r\n<ion-content>\r\n    <ion-item lines='none'>\r\n        <ion-icon color=\"dark\" name=\"ios-arrow-down\" (click)=\"dismiss()\"></ion-icon>\r\n        <ion-label class=\"ion-margin\">\r\n        <h2 class=\"hv-text-size-12 hv-text-align-center\">Select Country</h2>\r\n        </ion-label>\r\n    </ion-item>\r\n\r\n    <ion-list class=\"hv-margin-left hv-margin-right\" lines=\"none\">\r\n\r\n        <ion-item  >\r\n            <ion-label class=\"ion-text-center\" >China</ion-label>\r\n        </ion-item>\r\n\r\n        <ion-item  >\r\n            <ion-label class=\"ion-text-center\" >India</ion-label>\r\n        </ion-item>\r\n\r\n        <ion-item  >\r\n            <ion-label class=\"ion-text-center\" >U.S.</ion-label>\r\n        </ion-item>\r\n\r\n        <ion-item  >\r\n            <ion-label class=\"ion-text-center\" >Other</ion-label>\r\n        </ion-item>\r\n\r\n    </ion-list>\r\n</ion-content>\r\n"
 
 /***/ }),
 
@@ -506,7 +517,7 @@ module.exports = "\r\n<ion-content color=\"transparent\">\r\n  <div class=\"ion-
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-toolbar >\r\n    <ion-buttons slot=\"start\">\r\n      <ion-button class=\"pull-down\">\r\n        <ion-icon class=\"tm-label-gray\" name=\"ios-arrow-down\"></ion-icon>\r\n      </ion-button>\r\n    </ion-buttons>\r\n      <ion-item  text-center lines=\"none\" class=\" toolbar-title tm-text-size-12\">\r\n        <p class=\"tm-p-width\" >Select Account to send  <br>\r\n         your transfer to</p>\r\n      </ion-item> \r\n  </ion-toolbar>\r\n\r\n  \r\n  <ion-content [scrollEvents]=\"true\" overflow-scroll=\"true\"\r\n  (ionScrollStart)=\"logScrollStart()\" >\r\n  <ion-grid>\r\n  <ion-row>\r\n          <ion-col   size=\"3\">\r\n              <ion-img src=\"/assets/add.svg\"></ion-img>\r\n              <p text-center style=\"font-size: 9px;\">Velo Recipient</p>\r\n          </ion-col >\r\n          <ion-col  size=\"3\">\r\n              <ion-img src=\"/assets/add.svg\"></ion-img>\r\n              <p text-center style=\"font-size: 9px;\">U.S. Personal Account </p>\r\n          </ion-col >\r\n          <ion-col  size=\"3\">\r\n              <ion-img src=\"/assets/add.svg\"></ion-img>\r\n              <p text-center style=\"font-size: 9px;\">U.S. Business or Brokerage </p>\r\n          </ion-col >\r\n          <ion-col  size=\"3\">\r\n              <ion-img src=\"/assets/add.svg\"></ion-img>\r\n              <p text-center style=\"font-size: 9px;\">International Account</p>\r\n          </ion-col >\r\n    </ion-row>\r\n  </ion-grid>\r\n    <!-- <ion-grid>\r\n        <ion-row align-items-center>\r\n              <ion-col size=\"3\" text-center>\r\n                  <ion-item no-lines text-center>\r\n                    <ion-img src=\"/assets/add.svg\"></ion-img>\r\n                    <ion-label class=\"tm-text-size-10\" color=\"dark\">Velo Recipient </ion-label>\r\n                  </ion-item>\r\n              </ion-col>\r\n\r\n            <ion-col size=\"3\" text-center>\r\n                <ion-img src=\"/assets/add.svg\"></ion-img>\r\n                <ion-label class=\"tm-text-size-10\" color=\"dark\">U.S. Personal Account </ion-label>\r\n            </ion-col>\r\n            <ion-col size=\"3\" text-center>\r\n                <ion-img src=\"/assets/add.svg\"></ion-img>\r\n                <ion-label class=\"tm-text-size-10\" color=\"dark\">U.S. Business or Brokerage </ion-label>\r\n            </ion-col>\r\n            <ion-col size=\"3\" text-center>\r\n                <ion-img src=\"/assets/add.svg\"></ion-img>\r\n                <ion-label class=\"tm-text-size-10\" color=\"dark\">International Account</ion-label>\r\n            </ion-col>\r\n      </ion-row>\r\n      </ion-grid> -->\r\n  </ion-content>"
+module.exports = "<ion-toolbar >\r\n    <ion-buttons slot=\"start\">\r\n      <ion-button class=\"pull-down\">\r\n        <ion-icon class=\"tm-label-gray\" name=\"ios-arrow-down\"></ion-icon>\r\n      </ion-button>\r\n    </ion-buttons>\r\n      <ion-item  text-center lines=\"none\" class=\" toolbar-title tm-text-size-12\">\r\n        <p class=\"tm-p-width\" >Select Account to send  <br>\r\n         your transfer to</p>\r\n      </ion-item> \r\n  </ion-toolbar>\r\n\r\n  \r\n  <ion-content [scrollEvents]=\"true\" overflow-scroll=\"true\"\r\n  (ionScrollStart)=\"logScrollStart()\" >\r\n  <ion-grid>\r\n  <ion-row>\r\n          <ion-col   size=\"3\">\r\n              <ion-img src=\"/assets/add.svg\"></ion-img>\r\n              <p text-center style=\"font-size: 9px;\">mBank Recipient</p>\r\n          </ion-col >\r\n          <ion-col  size=\"3\">\r\n              <ion-img src=\"/assets/add.svg\"></ion-img>\r\n              <p text-center style=\"font-size: 9px;\">U.S. Personal Account </p>\r\n          </ion-col >\r\n          <ion-col  size=\"3\">\r\n              <ion-img src=\"/assets/add.svg\"></ion-img>\r\n              <p text-center style=\"font-size: 9px;\">U.S. Business or Brokerage </p>\r\n          </ion-col >\r\n          <ion-col  size=\"3\">\r\n              <ion-img src=\"/assets/add.svg\"></ion-img>\r\n              <p text-center style=\"font-size: 9px;\">International Account</p>\r\n          </ion-col >\r\n    </ion-row>\r\n  </ion-grid>\r\n    <!-- <ion-grid>\r\n        <ion-row align-items-center>\r\n              <ion-col size=\"3\" text-center>\r\n                  <ion-item no-lines text-center>\r\n                    <ion-img src=\"/assets/add.svg\"></ion-img>\r\n                    <ion-label class=\"tm-text-size-10\" color=\"dark\">Velo Recipient </ion-label>\r\n                  </ion-item>\r\n              </ion-col>\r\n\r\n            <ion-col size=\"3\" text-center>\r\n                <ion-img src=\"/assets/add.svg\"></ion-img>\r\n                <ion-label class=\"tm-text-size-10\" color=\"dark\">U.S. Personal Account </ion-label>\r\n            </ion-col>\r\n            <ion-col size=\"3\" text-center>\r\n                <ion-img src=\"/assets/add.svg\"></ion-img>\r\n                <ion-label class=\"tm-text-size-10\" color=\"dark\">U.S. Business or Brokerage </ion-label>\r\n            </ion-col>\r\n            <ion-col size=\"3\" text-center>\r\n                <ion-img src=\"/assets/add.svg\"></ion-img>\r\n                <ion-label class=\"tm-text-size-10\" color=\"dark\">International Account</ion-label>\r\n            </ion-col>\r\n      </ion-row>\r\n      </ion-grid> -->\r\n  </ion-content>"
 
 /***/ }),
 
@@ -517,7 +528,7 @@ module.exports = "<ion-toolbar >\r\n    <ion-buttons slot=\"start\">\r\n      <i
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".hv-text-size-12 {\n  font-size: 12px;\n}\n\n.hv-text-size-16 {\n  font-size: 16px;\n}\n\n.hv-text-align-center {\n  text-align: center;\n  align-content: center;\n}\n\n.hv-padding-left-20 {\n  padding-left: 20px;\n}\n\n.hv-padding-right-20 {\n  padding-right: 20px;\n}\n\n.hv-padding-top-20 {\n  padding-top: 20px;\n}\n\n.hv-margin-left {\n  margin-left: 20px;\n}\n\n.hv-margin-right {\n  margin-right: 20px;\n}\n\n.hv-item-margin {\n  margin-left: 30px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYm90dG9tLXNoZWV0L0M6XFxVc2Vyc1xcc2h3ZXRhLmtcXElvbmljUHJvamVjdHNcXG1iYW5rL3NyY1xcYXBwXFxib3R0b20tc2hlZXRcXGJvdHRvbS1zaGVldC5wYWdlLnNjc3MiLCJzcmMvYXBwL2JvdHRvbS1zaGVldC9ib3R0b20tc2hlZXQucGFnZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUNBO0VBQ0ksZUFBQTtBQ0FKOztBREdBO0VBQ0ksZUFBQTtBQ0FKOztBREdBO0VBQ0ksa0JBQUE7RUFDQSxxQkFBQTtBQ0FKOztBREdBO0VBQ0ksa0JBQUE7QUNBSjs7QURHQTtFQUNJLG1CQUFBO0FDQUo7O0FER0E7RUFDSSxpQkFBQTtBQ0FKOztBREdBO0VBQ0ksaUJBQUE7QUNBSjs7QURHQTtFQUNJLGtCQUFBO0FDQUo7O0FER0E7RUFDSSxpQkFBQTtBQ0FKIiwiZmlsZSI6InNyYy9hcHAvYm90dG9tLXNoZWV0L2JvdHRvbS1zaGVldC5wYWdlLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJcclxuLmh2LXRleHQtc2l6ZS0xMntcclxuICAgIGZvbnQtc2l6ZTogMTJweDtcclxufVxyXG5cclxuLmh2LXRleHQtc2l6ZS0xNntcclxuICAgIGZvbnQtc2l6ZTogMTZweDtcclxufVxyXG5cclxuLmh2LXRleHQtYWxpZ24tY2VudGVye1xyXG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgYWxpZ24tY29udGVudDogY2VudGVyXHJcbn1cclxuXHJcbi5odi1wYWRkaW5nLWxlZnQtMjB7XHJcbiAgICBwYWRkaW5nLWxlZnQ6IDIwcHhcclxufVxyXG5cclxuLmh2LXBhZGRpbmctcmlnaHQtMjB7XHJcbiAgICBwYWRkaW5nLXJpZ2h0OiAyMHB4XHJcbn1cclxuXHJcbi5odi1wYWRkaW5nLXRvcC0yMHtcclxuICAgIHBhZGRpbmctdG9wOiAyMHB4XHJcbn1cclxuXHJcbi5odi1tYXJnaW4tbGVmdHtcclxuICAgIG1hcmdpbi1sZWZ0OiAyMHB4LFxyXG59XHJcblxyXG4uaHYtbWFyZ2luLXJpZ2h0e1xyXG4gICAgbWFyZ2luLXJpZ2h0OiAyMHB4LFxyXG59XHJcblxyXG4uaHYtaXRlbS1tYXJnaW57XHJcbiAgICBtYXJnaW4tbGVmdDogMzBweDtcclxufVxyXG5cclxuXHJcblxyXG5cclxuXHJcbiIsIi5odi10ZXh0LXNpemUtMTIge1xuICBmb250LXNpemU6IDEycHg7XG59XG5cbi5odi10ZXh0LXNpemUtMTYge1xuICBmb250LXNpemU6IDE2cHg7XG59XG5cbi5odi10ZXh0LWFsaWduLWNlbnRlciB7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgYWxpZ24tY29udGVudDogY2VudGVyO1xufVxuXG4uaHYtcGFkZGluZy1sZWZ0LTIwIHtcbiAgcGFkZGluZy1sZWZ0OiAyMHB4O1xufVxuXG4uaHYtcGFkZGluZy1yaWdodC0yMCB7XG4gIHBhZGRpbmctcmlnaHQ6IDIwcHg7XG59XG5cbi5odi1wYWRkaW5nLXRvcC0yMCB7XG4gIHBhZGRpbmctdG9wOiAyMHB4O1xufVxuXG4uaHYtbWFyZ2luLWxlZnQge1xuICBtYXJnaW4tbGVmdDogMjBweDtcbn1cblxuLmh2LW1hcmdpbi1yaWdodCB7XG4gIG1hcmdpbi1yaWdodDogMjBweDtcbn1cblxuLmh2LWl0ZW0tbWFyZ2luIHtcbiAgbWFyZ2luLWxlZnQ6IDMwcHg7XG59Il19 */"
+module.exports = ".hv-text-size-12 {\n  font-size: 12px;\n}\n\n.hv-text-size-16 {\n  font-size: 16px;\n}\n\n.hv-text-size-20 {\n  font-size: 20px;\n}\n\n.hv-text-align-center {\n  text-align: center;\n  align-content: center;\n}\n\n.hv-padding-left-20 {\n  padding-left: 20px;\n}\n\n.hv-padding-right-20 {\n  padding-right: 20px;\n}\n\n.hv-padding-top-20 {\n  padding-top: 20px;\n}\n\n.hv-margin-left {\n  margin-left: 20px;\n}\n\n.hv-margin-right {\n  margin-right: 20px;\n}\n\n.hv-item-margin {\n  margin-left: 30px;\n}\n\n.item-padding {\n  padding-left: 3px;\n  padding-right: 3px;\n  padding-top: 3px;\n  padding-bottom: 3px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYm90dG9tLXNoZWV0L0M6XFxVc2Vyc1xcc2h3ZXRhLmtcXElvbmljUHJvamVjdHNcXG1iYW5rL3NyY1xcYXBwXFxib3R0b20tc2hlZXRcXGJvdHRvbS1zaGVldC5wYWdlLnNjc3MiLCJzcmMvYXBwL2JvdHRvbS1zaGVldC9ib3R0b20tc2hlZXQucGFnZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUNBO0VBQ0ksZUFBQTtBQ0FKOztBREdBO0VBQ0ksZUFBQTtBQ0FKOztBREdBO0VBQ0ksZUFBQTtBQ0FKOztBREdBO0VBQ0ksa0JBQUE7RUFDQSxxQkFBQTtBQ0FKOztBREdBO0VBQ0ksa0JBQUE7QUNBSjs7QURHQTtFQUNJLG1CQUFBO0FDQUo7O0FER0E7RUFDSSxpQkFBQTtBQ0FKOztBREdBO0VBQ0ksaUJBQUE7QUNBSjs7QURHQTtFQUNJLGtCQUFBO0FDQUo7O0FER0E7RUFDSSxpQkFBQTtBQ0FKOztBREdBO0VBQ0ksaUJBQUE7RUFDQSxrQkFBQTtFQUNBLGdCQUFBO0VBQ0EsbUJBQUE7QUNBSiIsImZpbGUiOiJzcmMvYXBwL2JvdHRvbS1zaGVldC9ib3R0b20tc2hlZXQucGFnZS5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiXHJcbi5odi10ZXh0LXNpemUtMTJ7XHJcbiAgICBmb250LXNpemU6IDEycHg7XHJcbn1cclxuXHJcbi5odi10ZXh0LXNpemUtMTZ7XHJcbiAgICBmb250LXNpemU6IDE2cHg7XHJcbn1cclxuXHJcbi5odi10ZXh0LXNpemUtMjB7XHJcbiAgICBmb250LXNpemU6IDIwcHg7XHJcbn1cclxuXHJcbi5odi10ZXh0LWFsaWduLWNlbnRlcntcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgIGFsaWduLWNvbnRlbnQ6IGNlbnRlclxyXG59XHJcblxyXG4uaHYtcGFkZGluZy1sZWZ0LTIwe1xyXG4gICAgcGFkZGluZy1sZWZ0OiAyMHB4XHJcbn1cclxuXHJcbi5odi1wYWRkaW5nLXJpZ2h0LTIwe1xyXG4gICAgcGFkZGluZy1yaWdodDogMjBweFxyXG59XHJcblxyXG4uaHYtcGFkZGluZy10b3AtMjB7XHJcbiAgICBwYWRkaW5nLXRvcDogMjBweFxyXG59XHJcblxyXG4uaHYtbWFyZ2luLWxlZnR7XHJcbiAgICBtYXJnaW4tbGVmdDogMjBweCxcclxufVxyXG5cclxuLmh2LW1hcmdpbi1yaWdodHtcclxuICAgIG1hcmdpbi1yaWdodDogMjBweCxcclxufVxyXG5cclxuLmh2LWl0ZW0tbWFyZ2lue1xyXG4gICAgbWFyZ2luLWxlZnQ6IDMwcHg7XHJcbn1cclxuXHJcbi5pdGVtLXBhZGRpbmd7XHJcbiAgICBwYWRkaW5nLWxlZnQ6IDNweDtcclxuICAgIHBhZGRpbmctcmlnaHQ6IDNweDtcclxuICAgIHBhZGRpbmctdG9wOiAzcHg7XHJcbiAgICBwYWRkaW5nLWJvdHRvbTogM3B4O1xyXG5cclxufVxyXG5cclxuXHJcblxyXG5cclxuXHJcbiIsIi5odi10ZXh0LXNpemUtMTIge1xuICBmb250LXNpemU6IDEycHg7XG59XG5cbi5odi10ZXh0LXNpemUtMTYge1xuICBmb250LXNpemU6IDE2cHg7XG59XG5cbi5odi10ZXh0LXNpemUtMjAge1xuICBmb250LXNpemU6IDIwcHg7XG59XG5cbi5odi10ZXh0LWFsaWduLWNlbnRlciB7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgYWxpZ24tY29udGVudDogY2VudGVyO1xufVxuXG4uaHYtcGFkZGluZy1sZWZ0LTIwIHtcbiAgcGFkZGluZy1sZWZ0OiAyMHB4O1xufVxuXG4uaHYtcGFkZGluZy1yaWdodC0yMCB7XG4gIHBhZGRpbmctcmlnaHQ6IDIwcHg7XG59XG5cbi5odi1wYWRkaW5nLXRvcC0yMCB7XG4gIHBhZGRpbmctdG9wOiAyMHB4O1xufVxuXG4uaHYtbWFyZ2luLWxlZnQge1xuICBtYXJnaW4tbGVmdDogMjBweDtcbn1cblxuLmh2LW1hcmdpbi1yaWdodCB7XG4gIG1hcmdpbi1yaWdodDogMjBweDtcbn1cblxuLmh2LWl0ZW0tbWFyZ2luIHtcbiAgbWFyZ2luLWxlZnQ6IDMwcHg7XG59XG5cbi5pdGVtLXBhZGRpbmcge1xuICBwYWRkaW5nLWxlZnQ6IDNweDtcbiAgcGFkZGluZy1yaWdodDogM3B4O1xuICBwYWRkaW5nLXRvcDogM3B4O1xuICBwYWRkaW5nLWJvdHRvbTogM3B4O1xufSJdfQ== */"
 
 /***/ }),
 
@@ -543,15 +554,15 @@ var BottomSheetPage = /** @class */ (function () {
         this.dataList = [
             {
                 title: 'Chat With Us',
-                url: '/assets/icon/favicon.png'
+                url: '/assets/chat.svg',
             },
             {
                 title: 'Call Us',
-                url: '/assets/icon/favicon.png'
+                url: '/assets/call.svg',
             },
             {
                 title: 'Search FAQs',
-                url: '/assets/icon/favicon.png'
+                url: '/assets/search.svg',
             }
         ];
     }
@@ -572,6 +583,60 @@ var BottomSheetPage = /** @class */ (function () {
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_angular__WEBPACK_IMPORTED_MODULE_2__["ModalController"]])
     ], BottomSheetPage);
     return BottomSheetPage;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/list-of-country/list-of-country.page.scss":
+/*!***********************************************************!*\
+  !*** ./src/app/list-of-country/list-of-country.page.scss ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".hv-text-size-12 {\n  font-size: 12px;\n}\n\n.hv-text-size-16 {\n  font-size: 16px;\n}\n\n.hv-text-align-center {\n  text-align: center;\n  align-content: center;\n}\n\n.hv-padding-left-20 {\n  padding-left: 20px;\n}\n\n.hv-padding-right-20 {\n  padding-right: 20px;\n}\n\n.hv-padding-top-20 {\n  padding-top: 20px;\n}\n\n.hv-margin-left {\n  margin-left: 20px;\n}\n\n.hv-margin-right {\n  margin-right: 20px;\n}\n\n.hv-item-margin {\n  margin-left: 30px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbGlzdC1vZi1jb3VudHJ5L0M6XFxVc2Vyc1xcc2h3ZXRhLmtcXElvbmljUHJvamVjdHNcXG1iYW5rL3NyY1xcYXBwXFxsaXN0LW9mLWNvdW50cnlcXGxpc3Qtb2YtY291bnRyeS5wYWdlLnNjc3MiLCJzcmMvYXBwL2xpc3Qtb2YtY291bnRyeS9saXN0LW9mLWNvdW50cnkucGFnZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUNBO0VBQ0ksZUFBQTtBQ0FKOztBREdBO0VBQ0ksZUFBQTtBQ0FKOztBREdBO0VBQ0ksa0JBQUE7RUFDQSxxQkFBQTtBQ0FKOztBREdBO0VBQ0ksa0JBQUE7QUNBSjs7QURHQTtFQUNJLG1CQUFBO0FDQUo7O0FER0E7RUFDSSxpQkFBQTtBQ0FKOztBREdBO0VBQ0ksaUJBQUE7QUNBSjs7QURHQTtFQUNJLGtCQUFBO0FDQUo7O0FER0E7RUFDSSxpQkFBQTtBQ0FKIiwiZmlsZSI6InNyYy9hcHAvbGlzdC1vZi1jb3VudHJ5L2xpc3Qtb2YtY291bnRyeS5wYWdlLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJcclxuLmh2LXRleHQtc2l6ZS0xMntcclxuICAgIGZvbnQtc2l6ZTogMTJweDtcclxufVxyXG5cclxuLmh2LXRleHQtc2l6ZS0xNntcclxuICAgIGZvbnQtc2l6ZTogMTZweDtcclxufVxyXG5cclxuLmh2LXRleHQtYWxpZ24tY2VudGVye1xyXG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgYWxpZ24tY29udGVudDogY2VudGVyXHJcbn1cclxuXHJcbi5odi1wYWRkaW5nLWxlZnQtMjB7XHJcbiAgICBwYWRkaW5nLWxlZnQ6IDIwcHhcclxufVxyXG5cclxuLmh2LXBhZGRpbmctcmlnaHQtMjB7XHJcbiAgICBwYWRkaW5nLXJpZ2h0OiAyMHB4XHJcbn1cclxuXHJcbi5odi1wYWRkaW5nLXRvcC0yMHtcclxuICAgIHBhZGRpbmctdG9wOiAyMHB4XHJcbn1cclxuXHJcbi5odi1tYXJnaW4tbGVmdHtcclxuICAgIG1hcmdpbi1sZWZ0OiAyMHB4LFxyXG59XHJcblxyXG4uaHYtbWFyZ2luLXJpZ2h0e1xyXG4gICAgbWFyZ2luLXJpZ2h0OiAyMHB4LFxyXG59XHJcblxyXG4uaHYtaXRlbS1tYXJnaW57XHJcbiAgICBtYXJnaW4tbGVmdDogMzBweDtcclxufVxyXG5cclxuXHJcblxyXG5cclxuXHJcbiIsIi5odi10ZXh0LXNpemUtMTIge1xuICBmb250LXNpemU6IDEycHg7XG59XG5cbi5odi10ZXh0LXNpemUtMTYge1xuICBmb250LXNpemU6IDE2cHg7XG59XG5cbi5odi10ZXh0LWFsaWduLWNlbnRlciB7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgYWxpZ24tY29udGVudDogY2VudGVyO1xufVxuXG4uaHYtcGFkZGluZy1sZWZ0LTIwIHtcbiAgcGFkZGluZy1sZWZ0OiAyMHB4O1xufVxuXG4uaHYtcGFkZGluZy1yaWdodC0yMCB7XG4gIHBhZGRpbmctcmlnaHQ6IDIwcHg7XG59XG5cbi5odi1wYWRkaW5nLXRvcC0yMCB7XG4gIHBhZGRpbmctdG9wOiAyMHB4O1xufVxuXG4uaHYtbWFyZ2luLWxlZnQge1xuICBtYXJnaW4tbGVmdDogMjBweDtcbn1cblxuLmh2LW1hcmdpbi1yaWdodCB7XG4gIG1hcmdpbi1yaWdodDogMjBweDtcbn1cblxuLmh2LWl0ZW0tbWFyZ2luIHtcbiAgbWFyZ2luLWxlZnQ6IDMwcHg7XG59Il19 */"
+
+/***/ }),
+
+/***/ "./src/app/list-of-country/list-of-country.page.ts":
+/*!*********************************************************!*\
+  !*** ./src/app/list-of-country/list-of-country.page.ts ***!
+  \*********************************************************/
+/*! exports provided: ListOfCountryPage */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ListOfCountryPage", function() { return ListOfCountryPage; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
+
+
+
+var ListOfCountryPage = /** @class */ (function () {
+    function ListOfCountryPage(model) {
+        this.model = model;
+    }
+    ListOfCountryPage.prototype.ngOnInit = function () {
+    };
+    ListOfCountryPage.prototype.dismiss = function () {
+        this.model.dismiss();
+    };
+    ListOfCountryPage.ctorParameters = function () { return [
+        { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["ModalController"] }
+    ]; };
+    ListOfCountryPage = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-list-of-country',
+            template: __webpack_require__(/*! raw-loader!./list-of-country.page.html */ "./node_modules/raw-loader/index.js!./src/app/list-of-country/list-of-country.page.html"),
+            styles: [__webpack_require__(/*! ./list-of-country.page.scss */ "./src/app/list-of-country/list-of-country.page.scss")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_angular__WEBPACK_IMPORTED_MODULE_2__["ModalController"]])
+    ], ListOfCountryPage);
+    return ListOfCountryPage;
 }());
 
 
