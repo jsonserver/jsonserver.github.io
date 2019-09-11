@@ -8,10 +8,6 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"./app-complete/app-complete.module": [
-		"./src/app/app-complete/app-complete.module.ts",
-		"app-complete-app-complete-module"
-	],
 	"./bottom-sheet/bottom-sheet.module": [
 		"./src/app/bottom-sheet/bottom-sheet.module.ts",
 		"common",
@@ -21,44 +17,14 @@ var map = {
 		"./src/app/card-management-debit/card-management-debit.module.ts",
 		"card-management-debit-card-management-debit-module"
 	],
-	"./chat-page/chat-page.module": [
-		"./src/app/chat-page/chat-page.module.ts",
-		"chat-page-chat-page-module"
-	],
-	"./chat-review/chat-review.module": [
-		"./src/app/chat-review/chat-review.module.ts",
-		"chat-review-chat-review-module"
-	],
-	"./chat-review/chat-review2/chat-review2.module": [
-		"./src/app/chat-review/chat-review2/chat-review2.module.ts",
-		"chat-review-chat-review2-chat-review2-module"
-	],
-	"./chat-review/chat-review3/chat-review3.module": [
-		"./src/app/chat-review/chat-review3/chat-review3.module.ts",
-		"chat-review-chat-review3-chat-review3-module"
-	],
-	"./country-of-citizenship/country-of-citizenship.module": [
-		"./src/app/country-of-citizenship/country-of-citizenship.module.ts",
-		"common",
-		"country-of-citizenship-country-of-citizenship-module"
-	],
 	"./dashboard/dashboard.module": [
 		"./src/app/dashboard/dashboard.module.ts",
 		"common",
 		"dashboard-dashboard-module"
 	],
-	"./get-started/get-started.module": [
-		"./src/app/get-started/get-started.module.ts",
-		"get-started-get-started-module"
-	],
 	"./history-velo-cd/history-velo-cd.module": [
 		"./src/app/history-velo-cd/history-velo-cd.module.ts",
 		"history-velo-cd-history-velo-cd-module"
-	],
-	"./list-of-country/list-of-country.module": [
-		"./src/app/list-of-country/list-of-country.module.ts",
-		"common",
-		"list-of-country-list-of-country-module"
 	],
 	"./login-password/login-password.module": [
 		"./src/app/login-password/login-password.module.ts",
@@ -89,18 +55,6 @@ var map = {
 		"./src/app/mysettings/mysettings.module.ts",
 		"mysettings-mysettings-module"
 	],
-	"./premier-checking/premier-checking.module": [
-		"./src/app/premier-checking/premier-checking.module.ts",
-		"premier-checking-premier-checking-module"
-	],
-	"./residency-status/residency-status.module": [
-		"./src/app/residency-status/residency-status.module.ts",
-		"residency-status-residency-status-module"
-	],
-	"./social-security-number/social-security-number.module": [
-		"./src/app/social-security-number/social-security-number.module.ts",
-		"social-security-number-social-security-number-module"
-	],
 	"./transaction-history-cd/transaction-history-cd.module": [
 		"./src/app/transaction-history-cd/transaction-history-cd.module.ts",
 		"transaction-history-cd-transaction-history-cd-module"
@@ -118,10 +72,6 @@ var map = {
 		"./src/app/transfer/transfer.module.ts",
 		"common",
 		"transfer-transfer-module"
-	],
-	"./velo-products/velo-products.module": [
-		"./src/app/velo-products/velo-products.module.ts",
-		"velo-products-velo-products-module"
 	]
 };
 function webpackAsyncContext(req) {
@@ -568,7 +518,7 @@ module.exports = webpackAsyncContext;
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-app>\n  <ion-split-pane>\n    <ion-menu id=\"myMenu\"  swipeEnabled=\"true\" type=\"overlay\" contentId=\"content\" side=\"end\">\n      <ion-header>\n         \n      </ion-header>\n\n   \n      <ion-content>\n          <ion-col class=\"ion-margin-top\"></ion-col>\n          <ion-text color=\"dark\"  >\n                <h2 class=\"ion-text-center\" >  \n                    My Velo   \n                 </h2>\n          </ion-text>\n          <ion-text color=\"dark\" >\n                   <p class=\"ion-text-center\">  \n                      Account No. 178348965   \n                    </p>\n          </ion-text>\n          <ion-text color=\"dark\">\n                     <p class=\"ion-text-center\">  \n                        Routing No. 322078381\n                      </p>\n          </ion-text>\n          <ion-text color=\"primary\">\n              <p class=\"ion-text-center\">  \n                 How to fund my Velo account >\n               </p>\n          </ion-text>\n\n\n          \n          <ion-grid>\n              <ion-row class=\"ion-margin\">\n                <ion-col col-6 no-padding>\n                    <ion-button color=\"primary\" no-margin expand=\"full\" size=\"small\" color=\"primary\" (click)=\"onClick()\">\n                        English\n                      </ion-button>\n                </ion-col>\n                <ion-col col-6 no-padding>\n                    <ion-button no-margin color=\"light\" outline expand=\"full\" size=\"small\" color=\"light\" (click)=\"onClick()\" cl>\n                        中文\n                      </ion-button>\n                </ion-col>\n              </ion-row>\n              </ion-grid>\n        \n        <ion-list>\n          <ion-menu-toggle  auto-hide=\"false\" *ngFor=\"let p of appPages\">\n            <ion-item [routerDirection]=\"'root'\" [routerLink]=\"[p.url]\">\n      \n              <ion-img class=\"app-ion-img\" slot=\"start\" src={{p.icon}} ></ion-img>\n              <ion-text color=\"primary\">\n                {{p.title}}\n              </ion-text>\n            </ion-item>\n          </ion-menu-toggle>\n        </ion-list>\n      </ion-content>\n    </ion-menu>\n    <ion-router-outlet id=\"content\" main></ion-router-outlet>\n  </ion-split-pane>\n</ion-app>\n"
+module.exports = "<ion-app>\r\n  <ion-split-pane>\r\n    <ion-menu id=\"myMenu\" swipeEnabled=\"true\" type=\"overlay\" contentId=\"content\" side=\"end\">\r\n      <ion-header>\r\n         \r\n      </ion-header>\r\n\r\n   \r\n      <ion-content>\r\n          <ion-col class=\"ion-margin-top\"></ion-col>\r\n          <ion-text color=\"dark\"  >\r\n                <h2 class=\"ion-text-center\" >  \r\n                    My Velo   \r\n                 </h2>\r\n          </ion-text>\r\n          <ion-text color=\"dark\" >\r\n                   <p class=\"ion-text-center\">  \r\n                      Account No. 178348965   \r\n                    </p>\r\n          </ion-text>\r\n          <ion-text color=\"dark\">\r\n                     <p class=\"ion-text-center\">  \r\n                        Routing No. 322078381\r\n                      </p>\r\n          </ion-text>\r\n          <ion-text color=\"primary\">\r\n              <p class=\"ion-text-center\">  \r\n                 How to fund my Velo account >\r\n               </p>\r\n          </ion-text>\r\n\r\n\r\n          \r\n          <ion-grid>\r\n              <ion-row class=\"ion-margin\">\r\n                <ion-col col-6 no-padding>\r\n                    <ion-button color=\"primary\" no-margin expand=\"full\" size=\"small\" color=\"primary\" (click)=\"onClick()\">\r\n                        English\r\n                      </ion-button>\r\n                </ion-col>\r\n                <ion-col col-6 no-padding>\r\n                    <ion-button no-margin color=\"light\" outline expand=\"full\" size=\"small\" color=\"light\" (click)=\"onClick()\" cl>\r\n                        中文\r\n                      </ion-button>\r\n                </ion-col>\r\n              </ion-row>\r\n              </ion-grid>\r\n        \r\n        <ion-list>\r\n          <ion-menu-toggle  auto-hide=\"true\" *ngFor=\"let p of appPages\">\r\n            <ion-item [routerDirection]=\"'root'\" [routerLink]=\"[p.url]\">\r\n      \r\n              <ion-icon slot=\"start\" src={{p.icon}} ></ion-icon>\r\n              <ion-text color=\"primary\">\r\n                {{p.title}}\r\n              </ion-text>\r\n            </ion-item>\r\n          </ion-menu-toggle>\r\n        </ion-list>\r\n      </ion-content>\r\n    </ion-menu>\r\n    <ion-router-outlet id=\"content\" main></ion-router-outlet>\r\n  </ion-split-pane>\r\n</ion-app>\r\n"
 
 /***/ }),
 
@@ -591,8 +541,12 @@ __webpack_require__.r(__webpack_exports__);
 const routes = [
     {
         path: '',
-        redirectTo: 'get-started',
+        redirectTo: 'home',
         pathMatch: 'full'
+    },
+    {
+        path: 'home',
+        loadChildren: () => __webpack_require__.e(/*! import() | home-home-module */ "home-home-module").then(__webpack_require__.bind(null, /*! ./home/home.module */ "./src/app/home/home.module.ts")).then(m => m.HomePageModule)
     },
     {
         path: 'list',
@@ -615,19 +569,6 @@ const routes = [
     { path: 'manage-account-details', loadChildren: './manage-accounts/manage-account-details/manage-account-details.module#ManageAccountDetailsPageModule' },
     { path: 'dashboard', loadChildren: './dashboard/dashboard.module#DashboardPageModule' },
     { path: 'dashboard/transfers', loadChildren: './transfer/transfer.module#TransferPageModule' },
-    //{ path: 'dashboard/mybrillio', loadChildren: './' },
-    { path: 'get-started', loadChildren: './get-started/get-started.module#GetStartedPageModule' },
-    { path: 'velo-products', loadChildren: './velo-products/velo-products.module#VeloProductsPageModule' },
-    { path: 'residency-status', loadChildren: './residency-status/residency-status.module#ResidencyStatusPageModule' },
-    { path: 'social-security-number', loadChildren: './social-security-number/social-security-number.module#SocialSecurityNumberPageModule' },
-    { path: 'country-of-citizenship', loadChildren: './country-of-citizenship/country-of-citizenship.module#CountryOfCitizenshipPageModule' },
-    { path: 'list-of-country', loadChildren: './list-of-country/list-of-country.module#ListOfCountryPageModule' },
-    { path: 'premier-checking', loadChildren: './premier-checking/premier-checking.module#PremierCheckingPageModule' },
-    { path: 'chat-page', loadChildren: './chat-page/chat-page.module#ChatPagePageModule' },
-    { path: 'chat-review', loadChildren: './chat-review/chat-review.module#ChatReviewPageModule' },
-    { path: 'app-complete', loadChildren: './app-complete/app-complete.module#AppCompletePageModule' },
-    { path: 'chat-review2', loadChildren: './chat-review/chat-review2/chat-review2.module#ChatReview2PageModule' },
-    { path: 'chat-review3', loadChildren: './chat-review/chat-review3/chat-review3.module#ChatReview3PageModule' },
 ];
 let AppRoutingModule = class AppRoutingModule {
 };
@@ -651,7 +592,7 @@ AppRoutingModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".app-ion-img {\n  width: 30px;\n  height: 30px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9wcmFzaGFudHBhdGlsL21CYW5rL3NyYy9hcHAvYXBwLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9hcHAuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxXQUFBO0VBQ0EsWUFBQTtBQ0NKIiwiZmlsZSI6InNyYy9hcHAvYXBwLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmFwcC1pb24taW1ne1xuICAgIHdpZHRoOiAzMHB4O1xuICAgIGhlaWdodDogMzBweDtcbn0iLCIuYXBwLWlvbi1pbWcge1xuICB3aWR0aDogMzBweDtcbiAgaGVpZ2h0OiAzMHB4O1xufSJdfQ== */"
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuc2NzcyJ9 */"
 
 /***/ }),
 
@@ -685,11 +626,12 @@ let AppComponent = class AppComponent {
         this.appPages = [
             {
                 title: 'Explore Products',
+                url: '/home',
                 icon: 'assets/explore_products.svg'
             },
             {
                 title: 'Transaction History',
-                url: '/transfer',
+                url: '/list',
                 icon: 'assets/group_7.svg'
             },
             {
@@ -704,7 +646,8 @@ let AppComponent = class AppComponent {
             },
             {
                 title: 'Privacy & Disclosures',
-                icon: 'assets/privacy.svg'
+                url: '/list',
+                icon: 'assets/group_6.svg'
             }
         ];
         this.initializeApp();
@@ -854,7 +797,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/prashantpatil/mBank/src/main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! C:\Users\shweta.k\IonicProjects\mbank\src\main.ts */"./src/main.ts");
 
 
 /***/ })
