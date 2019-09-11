@@ -698,7 +698,7 @@ var AppComponent = /** @class */ (function () {
             },
             {
                 title: 'Transaction History',
-                url: '/transfer',
+                url: '/transaction-history-checking',
                 icon: 'assets/group_7.svg'
             },
             {
