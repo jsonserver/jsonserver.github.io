@@ -106,10 +106,10 @@ let DashboardPage = class DashboardPage {
         this.navCtrl.navigateForward("transaction-history-cd");
     }
     goToVeloCD() {
-        this.navCtrl.navigateForward("history-velo-cd");
+        this.navCtrl.navigateForward("history-cd");
     }
     goToMyVelo() {
-        this.navCtrl.navigateForward("history-velo-cd");
+        this.navCtrl.navigateForward("history-cd");
     }
     openModel() {
         return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {

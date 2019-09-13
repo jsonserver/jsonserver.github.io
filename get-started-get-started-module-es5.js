@@ -97,7 +97,7 @@ var GetStartedPage = /** @class */ (function () {
     GetStartedPage.prototype.ngOnInit = function () {
     };
     GetStartedPage.prototype.goToVeloProducts = function () {
-        this.navCtrl.navigateForward("velo-products");
+        this.navCtrl.navigateForward("bank-products");
     };
     GetStartedPage.prototype.goToLoginPage = function () {
         this.navCtrl.navigateForward("login-username");

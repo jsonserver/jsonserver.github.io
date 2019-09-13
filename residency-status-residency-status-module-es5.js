@@ -112,7 +112,7 @@ var ResidencyStatusPage = /** @class */ (function () {
         }
     };
     ResidencyStatusPage.prototype.goToProduct = function () {
-        this.navCtrl.navigateForward("velo-products");
+        this.navCtrl.navigateForward("bank-products");
     };
     ResidencyStatusPage.prototype.mcqAnswer = function (_answer) {
         this.value = _answer;

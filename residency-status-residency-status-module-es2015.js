@@ -109,7 +109,7 @@ let ResidencyStatusPage = class ResidencyStatusPage {
         }
     }
     goToProduct() {
-        this.navCtrl.navigateForward("velo-products");
+        this.navCtrl.navigateForward("bank-products");
     }
     mcqAnswer(_answer) {
         this.value = _answer;

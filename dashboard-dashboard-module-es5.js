@@ -109,10 +109,10 @@ var DashboardPage = /** @class */ (function () {
         this.navCtrl.navigateForward("transaction-history-cd");
     };
     DashboardPage.prototype.goToVeloCD = function () {
-        this.navCtrl.navigateForward("history-velo-cd");
+        this.navCtrl.navigateForward("history-cd");
     };
     DashboardPage.prototype.goToMyVelo = function () {
-        this.navCtrl.navigateForward("history-velo-cd");
+        this.navCtrl.navigateForward("history-cd");
     };
     DashboardPage.prototype.openModel = function () {
         return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function () {

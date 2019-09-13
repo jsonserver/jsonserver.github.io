@@ -94,7 +94,7 @@ let GetStartedPage = class GetStartedPage {
     ngOnInit() {
     }
     goToVeloProducts() {
-        this.navCtrl.navigateForward("velo-products");
+        this.navCtrl.navigateForward("bank-products");
     }
     goToLoginPage() {
         this.navCtrl.navigateForward("login-username");
