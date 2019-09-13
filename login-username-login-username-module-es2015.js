@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header text-center>\r\n  <ion-toolbar color=\"light\">\r\n    <ion-buttons slot=\"start\">\r\n      <ion-button class=\"pull-left\" (click)=\"goToHome()\">\r\n        <ion-icon color=\"dark\" name=\"arrow-back\"></ion-icon>\r\n      </ion-button>\r\n    </ion-buttons>\r\n    <div>\r\n      <ion-title color=\"dark\" class=\"tp-text-size-12\"></ion-title>\r\n    </div>\r\n    <ion-buttons slot=\"end\">\r\n      <ion-button (click)=\"openManageAccounts()\" class=\"pull-right\">\r\n        <ion-icon color=\"dark\" name=\"md-more\"></ion-icon>\r\n      </ion-button>\r\n    </ion-buttons>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content style=\"width: 100%; height:100%\">\r\n\r\n  <!-- <img   style=\"display: block; margin:auto\" src=\"/assets/brillio.png\" alt=\"\" /> -->\r\n  \r\n  <p  class=\"title h1-margin\" text-center >mBank</p>\r\n  <img   style=\"display: block; margin:auto; height:40px; width:40px\" src=\"/assets/building.svg\" alt=\"\"/>\r\n  \r\n<ion-card style=\"margin-top: 10%\" col-md-4> \r\n    <ion-grid>\r\n        <ion-row>\r\n              <ion-col >\r\n                    <p class=\"p-font\" text-center>Enter your Username</p>\r\n                    <ion-item>\r\n                        <ion-input  placeholder=\"Username\"></ion-input>\r\n                    </ion-item>\r\n                    <ion-button style=\"margin-top: 10px \" expand=\"full\" text-center (click)=\"goToPaswordPage()\">Continue</ion-button>\r\n              </ion-col>\r\n        </ion-row>\r\n  </ion-grid>\r\n</ion-card>\r\n   \r\n\r\n</ion-content>"
+module.exports = "<ion-header text-center>\r\n  <ion-toolbar color=\"light\">\r\n    <ion-buttons slot=\"start\">\r\n      <ion-button class=\"pull-left\" (click)=\"goToHome()\">\r\n        <ion-icon color=\"dark\" name=\"ios-arrow-back\"></ion-icon>\r\n      </ion-button>\r\n    </ion-buttons>\r\n    <div>\r\n      <ion-title color=\"dark\" class=\"tp-text-size-12\"></ion-title>\r\n    </div>\r\n    <ion-buttons slot=\"end\">\r\n      <ion-button (click)=\"openManageAccounts()\" class=\"pull-right\">\r\n        <ion-icon color=\"dark\" name=\"md-more\"></ion-icon>\r\n      </ion-button>\r\n    </ion-buttons>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content style=\"width: 100%; height:100%\">\r\n\r\n  <!-- <img   style=\"display: block; margin:auto\" src=\"/assets/brillio.png\" alt=\"\" /> -->\r\n  \r\n  <p  class=\"title h1-margin\" text-center >mBank</p>\r\n  <img   style=\"display: block; margin:auto; height:40px; width:40px\" src=\"/assets/building.svg\" alt=\"\"/>\r\n  \r\n<ion-card style=\"margin-top: 10%\" col-md-4> \r\n    <ion-grid>\r\n        <ion-row>\r\n              <ion-col >\r\n                    <p class=\"p-font\" text-center>Enter your Username</p>\r\n                    <ion-item>\r\n                        <ion-input  placeholder=\"Username\"></ion-input>\r\n                    </ion-item>\r\n                    <ion-button style=\"margin-top: 10px \" expand=\"full\" text-center (click)=\"goToPaswordPage()\">Continue</ion-button>\r\n              </ion-col>\r\n        </ion-row>\r\n  </ion-grid>\r\n</ion-card>\r\n   \r\n\r\n</ion-content>"
 
 /***/ }),
 
@@ -97,7 +97,7 @@ let LoginUsernamePage = class LoginUsernamePage {
     ngOnInit() {
     }
     goToHome() {
-        this.navCtrl.navigateBack("home");
+        this.navCtrl.navigateBack("get-started");
     }
     goToPaswordPage() {
         this.navCtrl.navigateForward("login-password");

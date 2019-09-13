@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header text-center>\r\n    <ion-toolbar class=\"app-toolbar-color\">\r\n      <ion-buttons slot=\"start\">\r\n          <ion-button class=\"pull-left\" (click)=\"goToProduct()\">\r\n            <ion-icon color=\"light\" name=\"ios-arrow-back\" ></ion-icon>\r\n          </ion-button>\r\n        </ion-buttons>\r\n        <div>\r\n          <ion-title color=\"light\" class=\"app-text-size-16\">Residency Status</ion-title>\r\n        </div>\r\n\r\n        <ion-buttons slot=\"end\">\r\n            <ion-button class=\"pull-right\">\r\n              <ion-icon color=\"light\"  ></ion-icon>\r\n            </ion-button>\r\n          </ion-buttons>\r\n\r\n    </ion-toolbar>\r\n  </ion-header>\r\n\r\n<ion-content>\r\n    <div class=\"app-background\">\r\n\r\n        <ion-col class=\"ion-margin-top\"></ion-col>\r\n        <ion-text color=\"dark\">\r\n         <p class=\"ion-text-center app-text-size-16\">What is your legal U.S. residency status ?</p>\r\n        </ion-text>\r\n\r\n        <div class=\"screenPhoto\">\r\n          <img src='/assets/bank.svg' width=\"100\" height=\"100\">\r\n        </div>\r\n\r\n        <ion-list class=\"bg-transparent app-margin-left app-margin-right\">\r\n            <ion-radio-group>\r\n\r\n                <ion-item color=\"none\" >\r\n                    \r\n                  </ion-item>\r\n\r\n              <ion-item color=\"none\" >\r\n                <ion-radio color=\"secondary\" value=\"U.S. Citizen\" ></ion-radio>\r\n                <ion-label color=\"dark\" class=\"ion-margin\"> U.S. Citizen</ion-label>\r\n\r\n              </ion-item>\r\n          \r\n              <ion-item color=\"none\" >\r\n                <ion-radio color=\"secondary\" value=\"Permanent Resident\"></ion-radio>\r\n                <ion-label color=\"dark\" class=\"ion-margin\">Permanent Resident</ion-label>\r\n\r\n              </ion-item>\r\n          \r\n              <ion-item color=\"none\" >\r\n                <ion-radio  color=\"secondary\" value=\"Temporary Resident\"></ion-radio>\r\n                <ion-label color=\"dark\" class=\"ion-margin\">Temporary Resident</ion-label>\r\n\r\n              </ion-item>\r\n\r\n              <ion-item color=\"none\" >\r\n                  <ion-radio color=\"secondary\" value=\"Non-Resident\"></ion-radio>\r\n                  <ion-label color=\"dark\" class=\"ion-margin\"> Non-Resident</ion-label>\r\n\r\n              </ion-item>\r\n\r\n             \r\n            </ion-radio-group>\r\n          </ion-list>\r\n\r\n          <ion-col class=\"ion-margin-top\"></ion-col>\r\n\r\n          <ion-text color=\"secondary\" (click)=\"presentAlert()\">\r\n              <p class=\"ion-text-center app-text-size-12\">Help me find out ></p>\r\n          </ion-text>\r\n\r\n          <ion-col class=\"ion-margin-top\"></ion-col>\r\n\r\n          <ion-button color=\"primary\" expand=\"full\" class=\"app-margin-left app-margin-right app-text-size-12\" (click)=\"goToSocialSecurityNumber()\" > Continue ></ion-button>\r\n\r\n    </div>\r\n</ion-content>\r\n"
+module.exports = "<ion-header text-center>\r\n    <ion-toolbar class=\"app-toolbar-color\">\r\n      <ion-buttons slot=\"start\">\r\n          <ion-button class=\"pull-left\" (click)=\"goToProduct()\">\r\n            <ion-icon color=\"light\" name=\"ios-arrow-back\" ></ion-icon>\r\n          </ion-button>\r\n        </ion-buttons>\r\n        <div>\r\n          <ion-title color=\"light\" class=\"app-text-size-16\">Residency Status</ion-title>\r\n        </div>\r\n\r\n        <ion-buttons slot=\"end\">\r\n            <ion-button class=\"pull-right\">\r\n              <ion-icon color=\"light\"  ></ion-icon>\r\n            </ion-button>\r\n          </ion-buttons>\r\n\r\n    </ion-toolbar>\r\n  </ion-header>\r\n\r\n<ion-content>\r\n    <div class=\"app-background\">\r\n\r\n        <ion-col class=\"ion-margin-top\"></ion-col>\r\n        <ion-text color=\"dark\">\r\n         <p class=\"ion-text-center app-text-size-16\">What is your legal U.S. residency status ?</p>\r\n        </ion-text>\r\n\r\n        <div class=\"screenPhoto\">\r\n          <img src='/assets/bank.svg' width=\"100\" height=\"100\">\r\n        </div>\r\n\r\n        <ion-list class=\"bg-transparent app-margin-left app-margin-right\" >\r\n            <ion-radio-group>\r\n\r\n                <ion-item color=\"none\" >\r\n                    \r\n                  </ion-item>\r\n\r\n              <ion-item color=\"none\" >\r\n                <ion-radio color=\"secondary\" value=\"U.S. Citizen\"  (ionSelect)=\"mcqAnswer(1)\" ></ion-radio>\r\n                <ion-label color=\"dark\" class=\"ion-margin\"> U.S. Citizen</ion-label>\r\n\r\n              </ion-item>\r\n          \r\n              <ion-item color=\"none\" >\r\n                <ion-radio color=\"secondary\" value=\"Permanent Resident\" (ionSelect)=\"mcqAnswer(2)\"></ion-radio>\r\n                <ion-label color=\"dark\" class=\"ion-margin\">Permanent Resident</ion-label>\r\n\r\n              </ion-item>\r\n          \r\n              <ion-item color=\"none\" >\r\n                <ion-radio  color=\"secondary\" value=\"Temporary Resident\" (ionSelect)=\"mcqAnswer(3)\"></ion-radio>\r\n                <ion-label color=\"dark\" class=\"ion-margin\">Temporary Resident</ion-label>\r\n\r\n              </ion-item>\r\n\r\n              <ion-item color=\"none\" >\r\n                  <ion-radio color=\"secondary\" value=\"Non-Resident\" (ionSelect)=\"mcqAnswer(4)\"></ion-radio>\r\n                  <ion-label color=\"dark\" class=\"ion-margin\"> Non-Resident</ion-label>\r\n\r\n              </ion-item>\r\n\r\n             \r\n            </ion-radio-group>\r\n          </ion-list>\r\n\r\n          <ion-col class=\"ion-margin-top\"></ion-col>\r\n\r\n          <ion-text color=\"secondary\" (click)=\"presentAlert()\">\r\n              <p class=\"ion-text-center app-text-size-12\">Help me find out ></p>\r\n          </ion-text>\r\n\r\n          <ion-col class=\"ion-margin-top\"></ion-col>\r\n\r\n          <ion-button color=\"primary\" expand=\"full\" class=\"app-margin-left app-margin-right app-text-size-12\" (click)=\"goToSocialSecurityNumber()\" > Continue ></ion-button>\r\n\r\n    </div>\r\n</ion-content>\r\n"
 
 /***/ }),
 
@@ -86,22 +86,37 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+
 
 
 
 
 var ResidencyStatusPage = /** @class */ (function () {
-    function ResidencyStatusPage(navCtrl, alertController) {
+    function ResidencyStatusPage(navCtrl, alertController, router) {
         this.navCtrl = navCtrl;
         this.alertController = alertController;
+        this.router = router;
     }
     ResidencyStatusPage.prototype.ngOnInit = function () {
     };
     ResidencyStatusPage.prototype.goToSocialSecurityNumber = function () {
-        this.navCtrl.navigateForward("social-security-number");
+        if (this.value == 1) {
+            var json = "{\"val\": " + this.value + "}";
+            this.router.navigate(['/social-security-number'], {
+                queryParams: JSON.parse(json),
+            });
+        }
+        else {
+            this.navCtrl.navigateForward("social-security-number");
+        }
     };
     ResidencyStatusPage.prototype.goToProduct = function () {
         this.navCtrl.navigateForward("velo-products");
+    };
+    ResidencyStatusPage.prototype.mcqAnswer = function (_answer) {
+        this.value = _answer;
+        console.log(this.value);
     };
     ResidencyStatusPage.prototype.presentAlert = function () {
         return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function () {
@@ -130,7 +145,8 @@ var ResidencyStatusPage = /** @class */ (function () {
     };
     ResidencyStatusPage.ctorParameters = function () { return [
         { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["NavController"] },
-        { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["AlertController"] }
+        { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["AlertController"] },
+        { type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"] }
     ]; };
     ResidencyStatusPage = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -138,7 +154,7 @@ var ResidencyStatusPage = /** @class */ (function () {
             template: __webpack_require__(/*! raw-loader!./residency-status.page.html */ "./node_modules/raw-loader/index.js!./src/app/residency-status/residency-status.page.html"),
             styles: [__webpack_require__(/*! ./residency-status.page.scss */ "./src/app/residency-status/residency-status.page.scss")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_angular__WEBPACK_IMPORTED_MODULE_2__["NavController"], _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["AlertController"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_angular__WEBPACK_IMPORTED_MODULE_2__["NavController"], _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["AlertController"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]])
     ], ResidencyStatusPage);
     return ResidencyStatusPage;
 }());

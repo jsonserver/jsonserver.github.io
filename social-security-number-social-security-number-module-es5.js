@@ -86,19 +86,34 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+
+
 
 
 
 
 var SocialSecurityNumberPage = /** @class */ (function () {
-    function SocialSecurityNumberPage(navCtrl, alertController) {
+    function SocialSecurityNumberPage(router, navCtrl, alertController, activatedRoute) {
+        var _this = this;
+        this.router = router;
         this.navCtrl = navCtrl;
         this.alertController = alertController;
+        this.activatedRoute = activatedRoute;
+        this.activatedRoute.queryParams.subscribe(function (res) {
+            _this.myObject = (JSON.stringify(res));
+        });
     }
     SocialSecurityNumberPage.prototype.ngOnInit = function () {
     };
     SocialSecurityNumberPage.prototype.goToCountryOfCitizenship = function () {
-        this.navCtrl.navigateForward("country-of-citizenship");
+        if (this.myObject.includes("1")) {
+            this.router.navigate(['/premier-checking'], {
+                queryParams: JSON.parse(this.myObject),
+            });
+        }
+        else
+            this.navCtrl.navigateForward("country-of-citizenship");
     };
     SocialSecurityNumberPage.prototype.goBack = function () {
         this.navCtrl.navigateForward("residency-status");
@@ -129,8 +144,10 @@ var SocialSecurityNumberPage = /** @class */ (function () {
         });
     };
     SocialSecurityNumberPage.ctorParameters = function () { return [
+        { type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"] },
         { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["NavController"] },
-        { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["AlertController"] }
+        { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["AlertController"] },
+        { type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"] }
     ]; };
     SocialSecurityNumberPage = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -138,7 +155,7 @@ var SocialSecurityNumberPage = /** @class */ (function () {
             template: __webpack_require__(/*! raw-loader!./social-security-number.page.html */ "./node_modules/raw-loader/index.js!./src/app/social-security-number/social-security-number.page.html"),
             styles: [__webpack_require__(/*! ./social-security-number.page.scss */ "./src/app/social-security-number/social-security-number.page.scss")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_angular__WEBPACK_IMPORTED_MODULE_2__["NavController"], _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["AlertController"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"], _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["NavController"], _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["AlertController"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"]])
     ], SocialSecurityNumberPage);
     return SocialSecurityNumberPage;
 }());

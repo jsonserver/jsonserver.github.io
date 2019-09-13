@@ -83,12 +83,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+
 
 
 
 let PremierCheckingPage = class PremierCheckingPage {
-    constructor(navCtrl) {
+    constructor(navCtrl, activatedRoute) {
         this.navCtrl = navCtrl;
+        this.activatedRoute = activatedRoute;
+        this.activatedRoute.queryParams.subscribe((res) => {
+            this.myObject = (JSON.stringify(res));
+        });
     }
     ngOnInit() {
     }
@@ -96,11 +102,16 @@ let PremierCheckingPage = class PremierCheckingPage {
         this.navCtrl.navigateForward("chat-page");
     }
     goBack() {
-        this.navCtrl.navigateForward("country-of-citizenship");
+        if (this.myObject.includes("1")) {
+            this.navCtrl.navigateForward("social-security-number");
+        }
+        else
+            this.navCtrl.navigateForward("country-of-citizenship");
     }
 };
 PremierCheckingPage.ctorParameters = () => [
-    { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["NavController"] }
+    { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["NavController"] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"] }
 ];
 PremierCheckingPage = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -108,7 +119,7 @@ PremierCheckingPage = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         template: __webpack_require__(/*! raw-loader!./premier-checking.page.html */ "./node_modules/raw-loader/index.js!./src/app/premier-checking/premier-checking.page.html"),
         styles: [__webpack_require__(/*! ./premier-checking.page.scss */ "./src/app/premier-checking/premier-checking.page.scss")]
     }),
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_angular__WEBPACK_IMPORTED_MODULE_2__["NavController"]])
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_angular__WEBPACK_IMPORTED_MODULE_2__["NavController"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"]])
 ], PremierCheckingPage);
 
 
